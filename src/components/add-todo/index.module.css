@@ -1,0 +1,16 @@
+.addTodo {
+    width: 60%;
+    /* margin: auto; */
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    background-color: white;
+}
+
+.addTodoInput {
+    width: 100%;
+    border: none;
+}
