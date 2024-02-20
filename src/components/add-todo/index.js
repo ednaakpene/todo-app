@@ -39,7 +39,9 @@ function AddTodo() {
                 onChange={collectInput}
                 className={styles.addTodoInput}
                 placeholder="Start typing..." />
-            <button onClick={saveTodo}>Create</button>
+            <button className="btn btn-primary" onClick={saveTodo}>Create</button>
+
+            {/* className={`btn ${styles.btn}`} if you want to use css with bootstrap this is how to go about it..like say you want to change the color to pink you use css you give it the color and link it with boot strap this way */}
         </section>
     );
 }
