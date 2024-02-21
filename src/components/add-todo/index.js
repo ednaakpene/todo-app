@@ -32,10 +32,14 @@ function AddTodo() {
         // Set all todos in local storage
         setTodos([...todos, todo]);
         // TODO_KEY is the key todo is the value
+
+        // wipe the input
+        setTodo("");
     }
     return (
         <section className={styles.addTodo}>
             <input
+            value={todo}
                 onChange={collectInput}
                 className={styles.addTodoInput}
                 placeholder="Start typing..." />
